@@ -1,0 +1,146 @@
+{
+    "nikola.arbov": {
+        "password": "5125944Nik",
+        "is_admin": false
+    },
+    "arboff": {
+        "password": "5125944Nik",
+        "is_admin": true
+    },
+    "petko.angelov": {
+        "password": "petko",
+        "is_admin": true
+    },
+    "Andrean.Ivanov": {
+        "password": "1",
+        "is_admin": false
+    },
+    "Anton.Gorchev": {
+        "password": "Wolf239#",
+        "is_admin": false
+    },
+    "Anzhel.Dimitrov": {
+        "password": "Eagle561?",
+        "is_admin": false
+    },
+    "Atanas.Nedkov": {
+        "password": "Panda834.",
+        "is_admin": false
+    },
+    "Billy.Kirkoryan": {
+        "password": "Shark907$",
+        "is_admin": false
+    },
+    "Borislav.Videv": {
+        "password": "Horse126!",
+        "is_admin": false
+    },
+    "Daniela.Dokolyankova": {
+        "password": "Falcon673#",
+        "is_admin": false
+    },
+    "Emil.Nadzhekliev": {
+        "password": "Lion855?",
+        "is_admin": false
+    },
+    "Georgi.Chozhgov": {
+        "password": "Dolphin444.",
+        "is_admin": false
+    },
+    "Georgi.R.Georgiev": {
+        "password": "Snake911$",
+        "is_admin": false
+    },
+    "Irina.Kuneva": {
+        "password": "Rabbit202!",
+        "is_admin": false
+    },
+    "Ivan.Hristenko": {
+        "password": "Bear688#",
+        "is_admin": false
+    },
+    "Ivan.Mazdrashki": {
+        "password": "Wolf733?",
+        "is_admin": false
+    },
+    "Kostadin.Bechkov": {
+        "password": "Tiger599.",
+        "is_admin": false
+    },
+    "Kostadin.Kostadinov": {
+        "password": "Shark471$",
+        "is_admin": false
+    },
+    "Mario.T.Kostadinov": {
+        "password": "Falcon268!",
+        "is_admin": false
+    },
+    "Mariya.Zlatanova": {
+        "password": "Panda350#",
+        "is_admin": false
+    },
+    "Mihail.Georgiev": {
+        "password": "Lion780?",
+        "is_admin": false
+    },
+    "Mladen.Dimitrov": {
+        "password": "Eagle512.",
+        "is_admin": false
+    },
+    "Nikolay.Dambulov": {
+        "password": "Horse947$",
+        "is_admin": false
+    },
+    "Pamela.Yanakieva": {
+        "password": "Dolphin163!",
+        "is_admin": false
+    },
+    "Paula.Shishkova": {
+        "password": "Snake274#",
+        "is_admin": false
+    },
+    "Petar.Popov": {
+        "password": "Rabbit385?",
+        "is_admin": false
+    },
+    "Sergey.Kehayov": {
+        "password": "Bear496.",
+        "is_admin": false
+    },
+    "Stilian.Delev": {
+        "password": "Wolf607$",
+        "is_admin": false
+    },
+    "Todor.Alexandrov": {
+        "password": "Tiger718!",
+        "is_admin": false
+    },
+    "Toni.Zafirov": {
+        "password": "Shark829#",
+        "is_admin": false
+    },
+    "Valentina.Markovska": {
+        "password": "Falcon940?",
+        "is_admin": false
+    },
+    "Vanesa.Lazarova": {
+        "password": "Panda051.",
+        "is_admin": false
+    },
+    "Ventsislav.Popchev": {
+        "password": "Lion162$",
+        "is_admin": false
+    },
+    "Vilya.Georgieva": {
+        "password": "Eagle273!",
+        "is_admin": false
+    },
+    "Yordan.Stoychev": {
+        "password": "Horse384#",
+        "is_admin": false
+    },
+    "Zlatko.Ivanov": {
+        "password": "Dolphin495?",
+        "is_admin": false
+    }
+}
