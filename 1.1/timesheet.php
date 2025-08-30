@@ -224,7 +224,7 @@ $endDate = $_GET['end_date'] ?? '';
 
 <div class="section">
     <form method="post" onsubmit="return confirm('Reset all timesheet data?');">
-        <button type="submit" name="reset" class="reset-btn">Reset Timesheet</button>
+        <button type="submit" name="reset" class="reset-btn">Nuke Timesheet</button>
     </form>
 </div>
 
