@@ -1,10 +1,10 @@
 {
     "nikola.arbov": {
-        "password": "5125944Nik",
+        "password": "arboff",
         "is_admin": false
     },
     "arboff": {
-        "password": "5125944Nik",
+        "password": "arboff",
         "is_admin": true
     },
     "petko.angelov": {
