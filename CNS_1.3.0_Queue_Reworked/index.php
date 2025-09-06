@@ -65,6 +65,7 @@ $isAdmin  = $_SESSION['is_admin'] ?? false;
   <div class="container">
     <h1>Chat Queue Managment</h1>
 
+    <!-- --- Controls --- -->
     <div class="user-controls">
       <div style="flex-grow:1; text-align:center; font-weight:bold;">
         Logged in as: <?= htmlspecialchars($username) ?><?= $isAdmin ? " (Admin)" : "" ?>
@@ -94,6 +95,7 @@ $isAdmin  = $_SESSION['is_admin'] ?? false;
       <button id="chatToggleBtn" onclick="toggleChat()">Take Chat</button>
     </div>
 
+    <!-- --- Queue Sections --- -->
     <div class="section">
       <h2>Active Queue</h2>
       <div id="nextInQueue" class="next-in-queue">Loading...</div>
@@ -115,6 +117,7 @@ $isAdmin  = $_SESSION['is_admin'] ?? false;
     </div>
   </div>
 
+  <!-- --- Override Modal --- -->
   <div id="overrideModal">
     <div id="overrideModalContent">
       <h2>OVERRIDE ATTEMPT DETECTED</h2>
@@ -129,6 +132,7 @@ $isAdmin  = $_SESSION['is_admin'] ?? false;
     </div>
   </div>
 
+  <!-- --- Script: Override Handling --- -->
   <script>
     const USERNAME  = <?= json_encode($username) ?>;
     const IS_ADMIN  = <?= $isAdmin ? 'true' : 'false' ?>;
@@ -170,6 +174,7 @@ $isAdmin  = $_SESSION['is_admin'] ?? false;
       document.getElementById('overrideModal').style.display = 'none';
     }
 
+    // Close modal when clicking outside
     window.onclick = function(event) {
       const modal = document.getElementById('overrideModal');
       if (event.target === modal) modal.style.display = 'none';

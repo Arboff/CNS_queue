@@ -1,6 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
+// --- Set default timezone to Sofia ---
 date_default_timezone_set('Europe/Sofia');
 session_start();
 
@@ -22,7 +23,7 @@ function ensureFilesExist() {
     if (!file_exists($filename)) file_put_contents($filename, '[]');
     if (!file_exists($timesheetFile)) file_put_contents($timesheetFile, '');
     if (!file_exists($unplannedFile)) file_put_contents($unplannedFile, '[]');
-    if (!file_exists($overrideFile)) file_put_contents($overrideFile, '[]'); 
+    if (!file_exists($overrideFile)) file_put_contents($overrideFile, '[]'); // --- NEW ---
 }
 
 function loadQueue() {
@@ -100,6 +101,7 @@ function logOverride($username, $reason, $firstInQueue) {
     file_put_contents($overrideFile, json_encode($overrides, JSON_PRETTY_PRINT));
 }
 
+// --- NEW FUNCTION: Prevent status change while on chat ---
 function isOnChat($queue, $name) {
     $index = findUserIndex($queue, $name);
     if ($index === -1) return false;
@@ -111,6 +113,7 @@ function handleAction($action, $name) {
     $index = findUserIndex($queue, $name);
     $now = time();
 
+    // --- BLOCK: prevent actions if currently on chat ---
     $blockedActions = ['enter_chat','lunch','break','unplanned','leave_queue','logout'];
     if (isOnChat($queue, $name) && in_array($action, $blockedActions) && $action !== 'end_chat') {
         echo json_encode([
@@ -119,6 +122,7 @@ function handleAction($action, $name) {
         exit;
     }
 
+    // Log unplanned break if changing status
     if ($index !== -1 && isset($queue[$index]['status']) && $queue[$index]['status'] === 'unplanned' && isset($queue[$index]['break_start'])) {
         $start = $queue[$index]['break_start'];
         $end = $now;
@@ -180,6 +184,7 @@ function handleAction($action, $name) {
             break;
 
         case 'took_chat':
+    // --- NEW: check for override ---
     $reason = $_POST['override_reason'] ?? null;
     $firstInQueue = $_POST['first_in_queue'] ?? null;
     if ($reason && $firstInQueue && strcasecmp($firstInQueue, $name) !== 0) {

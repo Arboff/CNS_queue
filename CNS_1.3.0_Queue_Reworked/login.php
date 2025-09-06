@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             margin-bottom: 10px;
         }
 
-        
+        /* Footer at bottom of page */
         .page-footer {
             position: fixed;
             bottom: 10px;
@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </div>
 
-    
+    <!-- Footer at bottom of page -->
     <div class="page-footer">
         Version 1.3.2 | Build: 2025-09-06
     </div>
