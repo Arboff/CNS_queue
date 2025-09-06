@@ -1,18 +1,14 @@
 {
-    "nikola.arbov": {
-        "password": "arboff",
+    "Nikola.Arbov": {
+        "password": "1",
         "is_admin": false
-    },
-    "arboff": {
-        "password": "arboff",
-        "is_admin": true
     },
     "petko.angelov": {
         "password": "petko",
         "is_admin": true
     },
     "Andrean.Ivanov": {
-        "password": "1",
+        "password": "Tiger482!",
         "is_admin": false
     },
     "Anton.Gorchev": {
@@ -32,7 +28,7 @@
         "is_admin": false
     },
     "Borislav.Videv": {
-        "password": "Horse126!",
+        "password": "1",
         "is_admin": false
     },
     "Daniela.Dokolyankova": {

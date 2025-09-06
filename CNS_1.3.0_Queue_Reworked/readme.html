@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System README</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    ul, ol { margin: 0; padding-left: 20px; }
+    .highlight {
+      background: #ecf0f1;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+    .note { color: #7f8c8d; font-style: italic; }
+    .warning { color: #c0392b; font-weight: bold; }
+    .callout {
+      background: #fff5f5;
+      border: 1px solid #f5c2c7;
+      color: #7f1d1d;
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>System Guide</h1>
+
+    <div class="section">
+      <h2>How to Use</h2>
+      <ol>
+        <li><strong>Join the Queue:</strong> After logging in, click <span class="highlight">Enter Queue</span> when you’re on shift.</li>
+        <li><strong>Take a Chat:</strong> When it’s your turn, click <span class="highlight">Take Chat</span>. The survey opens immediately. Once you submit it, the chat is considered finished and you’re placed at the back of the queue.</li>
+        <li><strong>Survey Required:</strong> You <u>must</u> complete the survey before continuing. Even if you log out or refresh, the survey will reappear until submitted.</li>
+        <li><strong>Stuck Status:</strong> If you get stuck (e.g. <span class="highlight">Lunch Break</span>, <span class="highlight">On-Chat</span>), contact an admin.</li>
+        <li><strong>Passwords:</strong> Default credentials are provided. Update yours at
+          <a href="https://cns.rf.gd/password_reset.php" target="_blank">Password Reset</a>.</li>
+        <li>If you forget your password, ask an admin for help.</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>Admin Tools</h2>
+      <p>Admins see an extra <strong>ADMIN PANEL</strong> button. Inside, you can:</p>
+      <ul>
+        <li><strong>Change Status:</strong> Move any user by typing their name and desired status (not tied to your own login).</li>
+        <li><strong>Statistics:</strong> Total chats handled and average duration.</li>
+        <li><strong>Recent Chats:</strong> Logs all submissions. <em>Start</em> = when chat is taken, <em>End</em> = when survey is submitted. <span class="note">Known issue: times may appear 1h earlier.</span></li>
+        <li><strong>Nuke Timesheet:</strong> Resets chat statistics (not surveys). <span class="warning">Irreversible.</span></li>
+        <li><strong>Export:</strong> Filter results and export locally.</li>
+        <li><strong>User Management:</strong> Promote/demote admins, add/remove users, reset passwords (manual reset by admin/advisor).</li>
+        <li><strong>JSON Parser:</strong> Filter survey data, sort, and export to CSV.</li>
+        <li><strong>Nuke Records:</strong> Clears all survey records. <span class="warning">Irreversible. Confirmation required before action.</span></li>
+        <li><strong>Survey Integrity:</strong> The survey <u>automatically captures the logged-in username</u>. The <u>CNS ID is typed manually</u> by the advisor when submitting the survey. This lets admins verify who was logged in vs. which ID was used.
+          <br>Example: <span class="highlight">Logged-in user: Petko.Angelov — CNS ID entered: 60pna100</span> (shows Petko submitted a survey on behalf of 60pna100).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Important Links</h2>
+      <p><strong>User List (emergency only):</strong><br>
+        <a href="https://cns.rf.gd/user_list.php" target="_blank">https://cns.rf.gd/user_list.php</a><br>
+        Password: <span class="highlight">cns_plovdiv</span></p>
+      <div class="callout">
+        This link displays <u>all users, their passwords, and admin status</u>. It is <strong>not</strong> for providing credentials to users.
+        Use only in worst-case scenarios where you must verify a password. For non-emergencies (e.g., someone forgot their password):
+        <ol>
+          <li>Reset to a default password via the Admin Panel.</li>
+          <li>Have the user change it using the Password Reset page.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Testing Accounts</h2>
+      <ul>
+        <li><strong>Admin:</strong> Petko.Angelov / Petko</li>
+        <li><strong>User:</strong> Toni.Zafirov / Shark829#</li>
+      </ul>
+      <p class="note">These accounts are present in this version of the README for testing and will be <strong>removed on deployment</strong>.</p>
+    </div>
+
+    <div class="section">
+      <h2>Support</h2>
+      <p>For issues (bugs, timeouts, survey not loading), contact <strong>Nikola Arbov</strong>.</p>
+      <p class="note">Developed for <strong>Sky CNS Bulgaria</strong> by Nikola Arbov.</p>
+    </div>
+  </div>
+</body>
+</html>
